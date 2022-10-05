@@ -1,7 +1,7 @@
 #OS => debian 11 en mode serveur
 
 #Faire les installes suivante :
-apt -y install apache2 php curl wget vim ssh
+apt -y install apache2 php curl wget vim ssh figlet
 
 #Modification du fichier index.html
 vim /var/www/html/index.html
