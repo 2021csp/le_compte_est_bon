@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
- 
-  <head>
-	<metacharset="utf-8">
-	<title>Le compte est bon</title>
-  </head>
- 
-  <body>
-	<p>Site en construction ....</p>
-	<p align=center">Bient&ocirc;t vous serez quand partir du boulot</p>
-  </body>
- 
+	<head>
+		<metacharset="utf-8">
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<title>Le compte est bon</title>
+
+		<style> 
+.texte{
+	padding-top: 27px;
+}
+
+
+.petittour{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation-name: carre;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes carre{
+	0% {background-color: red; left: 0px; top:0px;}
+	20% {background-color: yellow; left: 200px; top:0px;}
+	40% {background-color: blue; color: white; left: 200px; top:200px;}
+	60% {background-color: violet; left: -200px; top:200px;}
+	80% {background-color: pink; left: -200px; top:0px;}
+	100% {background-color: green; left: 0px; top:0px;}
+}
+
+
+
+		</style>
+	</head>
+	<body>
+		<!--div class="horizon">
+			<div class="message">
+				<p>Site en construction...</p>
+			</div>
+			<div class="oeil_du_cyclone"></div>
+		</div-->
+
+		<center>
+		<div class="petittour"> 
+				<p class="texte">Site en construction...</p>
+		</div>
+		<p align="center">Bient&ocirc;t vous saurez quand partir du boulot</p>
+		<p> Vous connaissez Docker? </p>
+		</center>
+	</body>
 </html>
